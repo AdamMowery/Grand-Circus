@@ -31,43 +31,43 @@ class Timediff {
 
                             Period diff = Period.between(firstDate, secondDate);
                             dayConvert = diff.getDays();
-                            if (dayConvert<0){
-                                dayConvert = dayConvert*-1;
+                            if (dayConvert < 0) {
+                                dayConvert = dayConvert * -1;
                             }
                             System.out.println("The difference is: " + diff.getYears() + " years " + diff.getMonths() + " months and " + dayConvert + " days ");
-                        }else {
+                        } else {
                             LocalDate firstDate = LocalDate.of(year, month, day);
                             LocalDate secondDate = LocalDate.of(year1, month1, day1);
 
                             Period diff = Period.between(secondDate, firstDate);
                             dayConvert = diff.getDays();
-                            if (dayConvert<0){
-                                dayConvert = dayConvert*-1;
+                            if (dayConvert < 0) {
+                                dayConvert = dayConvert * -1;
                             }
                             System.out.println("The difference is: " + diff.getYears() + " years " + diff.getMonths() + " months and " + dayConvert + " days ");
                         }
 
-
                     } else if (day < 31 || day1 < 31) {
+                        // Doing the calculations and printing the results.
                         if (year < year1) {
-                                LocalDate firstDate = LocalDate.of(year, month, day);
-                                LocalDate secondDate = LocalDate.of(year1, month1, day1);
+                            LocalDate firstDate = LocalDate.of(year, month, day);
+                            LocalDate secondDate = LocalDate.of(year1, month1, day1);
 
-                                Period diff = Period.between(firstDate, secondDate);
+                            Period diff = Period.between(firstDate, secondDate);
                             dayConvert = diff.getDays();
-                            if (dayConvert<0){
-                                dayConvert = dayConvert*-1;
+                            if (dayConvert < 0) {
+                                dayConvert = dayConvert * -1;
                             }
                             System.out.println("The difference is: " + diff.getYears() + " years " + diff.getMonths() + " months and " + dayConvert + " days ");
 
-                        }else {
+                        } else {
                             LocalDate firstDate = LocalDate.of(year, month, day);
                             LocalDate secondDate = LocalDate.of(year1, month1, day1);
 
                             Period diff = Period.between(secondDate, firstDate);
                             dayConvert = diff.getDays();
-                            if (dayConvert<0){
-                                dayConvert = dayConvert*-1;
+                            if (dayConvert < 0) {
+                                dayConvert = dayConvert * -1;
                             }
                             System.out.println("The difference is: " + diff.getYears() + " years " + diff.getMonths() + " months and " + dayConvert + " days ");
                         }
@@ -75,57 +75,59 @@ class Timediff {
 
                 } else if (day < 30 || day1 < 30) {
                     if (dayCheck == 0 && dayCheck1 == 0) {
+                        // Doing the calculations and printing the results.
                         if (year < year1) {
                             LocalDate firstDate = LocalDate.of(year, month, day);
                             LocalDate secondDate = LocalDate.of(year1, month1, day1);
 
                             Period diff = Period.between(firstDate, secondDate);
                             dayConvert = diff.getDays();
-                            if (dayConvert<0){
-                                dayConvert = dayConvert*-1;
+                            if (dayConvert < 0) {
+                                dayConvert = dayConvert * -1;
                             }
                             System.out.println("The difference is: " + diff.getYears() + " years " + diff.getMonths() + " months and " + dayConvert + " days ");
-                        }else {
+                        } else {
                             LocalDate firstDate = LocalDate.of(year, month, day);
                             LocalDate secondDate = LocalDate.of(year1, month1, day1);
 
                             Period diff = Period.between(secondDate, firstDate);
                             dayConvert = diff.getDays();
-                            if (dayConvert<0){
-                                dayConvert = dayConvert*-1;
+                            if (dayConvert < 0) {
+                                dayConvert = dayConvert * -1;
                             }
                             System.out.println("The difference is: " + diff.getYears() + " years " + diff.getMonths() + " months and " + dayConvert + " days ");
                         }
                     } else {
                         if (day < 29 && day1 < 29) {
                             if (year < year1) {
+                                // Doing the calculations and printing the results.
                                 LocalDate firstDate = LocalDate.of(year, month, day);
                                 LocalDate secondDate = LocalDate.of(year1, month1, day1);
 
                                 Period diff = Period.between(firstDate, secondDate);
                                 dayConvert = diff.getDays();
-                                if (dayConvert<0){
-                                    dayConvert = dayConvert*-1;
+                                if (dayConvert < 0) {
+                                    dayConvert = dayConvert * -1;
                                 }
                                 System.out.println("The difference is: " + diff.getYears() + " years " + diff.getMonths() + " months and " + dayConvert + " days ");
-                            }else {
+                            } else {
                                 LocalDate firstDate = LocalDate.of(year, month, day);
                                 LocalDate secondDate = LocalDate.of(year1, month1, day1);
 
                                 Period diff = Period.between(secondDate, firstDate);
                                 dayConvert = diff.getDays();
-                                if (dayConvert<0){
-                                    dayConvert = dayConvert*-1;
+                                if (dayConvert < 0) {
+                                    dayConvert = dayConvert * -1;
                                 }
                                 System.out.println("The difference is: " + diff.getYears() + " years " + diff.getMonths() + " months and " + dayConvert + " days ");
                             }
                         } else {
-                            System.out.print("The day you entered for one or more of your dates was not valid please enter a valid day. 3");
+                            System.out.print("The day you entered for one or more of your dates was not valid please enter a valid day.");
                         }
                     }
 
                 } else if (day > 29 || day1 > 29) {
-                    System.out.print("The day you entered for one of your dates was not valid please enter a valid day. 2");
+                    System.out.print("The day you entered for one of your dates was not valid please enter a valid day.");
                 }
             }
             if (month > 12 || month < 1 || month1 > 12 || month1 < 1) {
@@ -133,7 +135,7 @@ class Timediff {
             }
         }
         if (day > 31 || day < 1 || day1 > 31 || day1 < 1) {
-            System.out.print("The day you entered for one of your dates was not valid please enter a valid day. 1");
+            System.out.print("The day you entered for one of your dates was not valid please enter a valid day.");
         }
 
     }
