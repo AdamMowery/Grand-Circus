@@ -11,7 +11,7 @@ class Math {
 
     // Taking apart the number the user entered.
     boolean calculations(int number) {
-        int total1 = 0;
+        int total = 0;
         int original = number;
         while (number > 0) {
             digit.add(number % 10);
@@ -22,9 +22,9 @@ class Math {
         // Getting the total of the numbers then comparing it to the original number the user entered
         for (int i = 0; i < digit.size(); i++) {
             int math = digit.get(i) * digit.get(i) * digit.get(i);
-            total1 = total1 + math;
+            total = total + math;
         }
-        if (total1 == original) {
+        if (total == original) {
             return true;
         }
         return false;
